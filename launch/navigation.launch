@@ -8,10 +8,12 @@
   <arg name="initial_pose_x" default="0.0"/>  <!--PAREMETRO DE POSCION INICIAL X -->
   <arg name="initial_pose_y" default="0.0"/>  <!--PAREMETRO DE POSCION INICIAL Y -->
   <arg name="initial_pose_a" default="0.0"/>  <!--PAREMETRO DE POSCION INICIAL GIRO RESPECTO AL CERO -->
+  <arg name="scan_topic" default="scan_filtered"/>  <!--PAREMETRO DE POSCION INICIAL GIRO RESPECTO AL CERO -->
   <include file="$(find gb_navigation)/launch/includes/amcl.launch.xml"> <!--LANZAR LA LOCALIZACION, DONDE ESTA EL ROBOT EN EL MAPA -->
     <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
     <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
     <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
+    <arg name="scan_topic" value="$(arg scan_topic)"/>
   </include>
 <!--NODOS DE NAVEGACION -->
   <include file="$(find gb_navigation)/launch/includes/move_base.launch.xml">
