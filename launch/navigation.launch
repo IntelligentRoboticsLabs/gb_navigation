@@ -16,7 +16,5 @@
     <arg name="scan_topic" value="$(arg scan_topic)"/>
   </include>
 <!--NODOS DE NAVEGACION -->
-  <include file="$(find gb_navigation)/launch/includes/move_base.launch.xml">
-    <arg name="custom_param_file" value="$(arg custom_param_file)"/>
-  </include>
+  <include file="$(find gb_navigation)/launch/includes/move_base.launch.xml"/>
 </launch>
