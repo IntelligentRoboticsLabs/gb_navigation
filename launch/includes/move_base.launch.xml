@@ -17,7 +17,7 @@
     <rosparam file="$(find gb_robots)/nav_params/costmap_common_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find gb_robots)/nav_params/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find gb_robots)/nav_params/global_costmap_params.yaml" command="load" />
-    <rosparam file="$(find gb_robots)/nav_params/dwa_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find gb_robots)/nav_params/trajectory_planner_params.yaml" command="load" />
     <rosparam file="$(find gb_robots)/nav_params/move_base_params.yaml" command="load" />
     <rosparam file="$(find gb_robots)/nav_params/global_planner_params.yaml" command="load" />
     <rosparam file="$(find gb_robots)/nav_params/navfn_global_planner_params.yaml" command="load" />
